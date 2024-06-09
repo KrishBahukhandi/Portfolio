@@ -1,0 +1,94 @@
+/* CSS Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Task 1: Creative Navigation bar */
+nav {
+    background: linear-gradient(90deg, #4CAF50, #8BC34A); /* Gradient background */
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Change to space-between for even spacing */
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px; /* Adjusted padding for better spacing */
+    transition: background 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav a.active {
+    background-color: white;
+    color: #4CAF50;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+/* Task 2: Photo on the left, text on the right */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    background-color: #f3f3f3; /* Creamier background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Task 3: H1 heading bold, name colorful with animation */
+h1 {
+    font-weight: bold;
+    font-size: 40px; /* Increased font size */
+}
+
+.highlight {
+    color: #ff6347; /* Colorful */
+    animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Task 4: Paragraph in a light color curvy box */
+p {
+    background-color: #e0e0e0; /* Adjusted background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    color: #333; /* Adjusted text color */
+}
+
+/* Task 5: View Projects button */
+.view-projects {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block; /* Changed to block for centering */
+    margin-left: auto; /* Centering with respect to paragraph */
+    margin-right: auto; /* Centering with respect to paragraph */
+}
+
+.view-projects:hover {
+    background-color: #45a049;
+}
